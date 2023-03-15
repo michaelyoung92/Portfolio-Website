@@ -86,6 +86,11 @@ select {
 }
 
 // General styling
+body {
+  background-color: #f0f0e8;
+  font-family: "montserrat", sans-serif;
+  min-height: 100vh;
+}
 
 .container {
   width: 95%;
@@ -96,4 +101,47 @@ select {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.bold-text {
+  font-weight: bold;
+  color: #febc2e;
+}
+
+.colored-text {
+  color: #febc2e;
+}
+
+// Header
+header {
+  padding: 1em 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+// Hide email cta on smaller devices
+.email-cta {
+  display: none;
+}
+
+// Show email cta on larger devices and hide email cta icon
+@media (min-width: 50em) {
+  .email-cta {
+    display: block;
+  }
+
+  .email-cta-icon {
+    display: none;
+  }
+}
+
+// Main section
+
+// Footer
+footer {
+  padding: 1em 0;
 }

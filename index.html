@@ -6,12 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Michael Young | Web Developer</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="main-header">
       <div class="container">
-        <a href="#">Michael Young</a>
+        <a class="title" href="#">Michael Young</a>
+        <a href="mailto:michaelbyoung9208@gmail.com" class="email-cta-icon"
+          ><i class="fa-light fa-envelope"></i
+        ></a>
         <a href="mailto:michaelbyoung9208@gmail.com"
+          ><img class="email-cta-icon" src="images/mail.svg" alt="envelope"
+        /></a>
+        <!--Show only on larger screens-->
+        <a class="email-cta" href="mailto:michaelbyoung9208@gmail.com"
           >michaelbyoung9208@gmail.com</a
         >
       </div>
@@ -21,24 +34,33 @@
       <section>
         <div class="container">
           <div class="even-columns">
-            <div>
+            <div class="hero-text">
               <p>Hello! My Name is</p>
               <h1 class="primary-heading">Michael Young</h1>
               <p>
-                I'm a <span>Web Developer</span> focused on creating beautiful
-                experiences online
+                I'm a <span class="bold-text">Web Developer</span> focused on
+                creating beautiful experiences online
               </p>
               <p>Based in Dumfries &amp; Galloway</p>
               <!--Underline-->
-              <p>Get in Touch - <a href="#">michaelbyoung9208@gmail.com</a></p>
+              <p>
+                Get in Touch -
+                <span class="colored-text"
+                  ><a href="#">michaelbyoung9208@gmail.com</a></span
+                >
+              </p>
               <ul role="list" aria-label="social-links">
                 <li><a aria-label="linkedin" href="#"></a></li>
                 <li><a aria-label="github" href="#"></a></li>
                 <li><a aria-label="instagram" href="#"></a></li>
               </ul>
             </div>
-            <div>
-              <img src="images/hero-img.svg" alt="illustration of laptop" />
+            <div class="hero-img-container">
+              <img
+                class="hero-img"
+                src="images/hero-img.svg"
+                alt="illustration of laptop"
+              />
             </div>
           </div>
         </div>
@@ -51,6 +73,7 @@
         <p>&copy; 2023 Michael Young</p>
       </div>
     </footer>
+
     <script src="js/main.js"></script>
   </body>
 </html>
