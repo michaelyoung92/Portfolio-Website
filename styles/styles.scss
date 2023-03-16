@@ -90,6 +90,9 @@ body {
   background-color: #f0f0e8;
   font-family: "montserrat", sans-serif;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .container {
@@ -103,29 +106,29 @@ a {
   color: inherit;
 }
 
-.bold-text {
-  font-weight: bold;
-  color: #febc2e;
-}
-
-.colored-text {
-  color: #febc2e;
+p {
+  color: rgb(0, 0, 0, 0.7);
 }
 
 // Header
 header {
-  padding: 1em 0;
-
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 0;
   }
+}
+
+.title {
+  font-size: 1.8rem;
+  color: rgb(0, 0, 0, 0.7);
 }
 
 // Hide email cta on smaller devices
 .email-cta {
   display: none;
+  color: #f1be46;
 }
 
 // Show email cta on larger devices and hide email cta icon
@@ -141,7 +144,70 @@ header {
 
 // Main section
 
+.hero-img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-img {
+  max-width: 300px;
+}
+
+.even-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.primary-heading {
+  font-size: 2.8rem;
+  margin-bottom: 2.5rem;
+  color: #f1be46;
+}
+
+.primary-text {
+  font-size: 1.9rem;
+  margin-bottom: 1rem;
+
+  span {
+    color: #f1be46;
+  }
+}
+
+.secondary-text {
+  font-size: 1.9rem;
+}
+
+.button {
+  background-color: #f1be46;
+  border: none;
+  padding: 1rem 1.8rem;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 2.5rem;
+  cursor: pointer;
+}
+
 // Footer
 footer {
-  padding: 1em 0;
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  text-align: center;
+
+  p {
+    opacity: 0.3;
+  }
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+
+  a {
+    display: flex;
+    justify-content: center;
+  }
 }
