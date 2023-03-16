@@ -113,12 +113,13 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding: 3rem 0;
 }
 
 .title {
   font-size: 1.8rem;
   color: rgba(0, 0, 0, 0.7);
+  font-family: "pacifico";
 }
 
 .email-cta {
@@ -149,6 +150,33 @@ header .container {
   gap: 5rem;
 }
 
+@media (min-width: 50em) {
+  .even-columns {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  .even-columns div {
+    flex-basis: 0;
+  }
+  .even-columns .hero-img-container {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+  .even-columns .hero-img {
+    max-width: 100%;
+  }
+  .hero-img-container {
+    order: 2;
+  }
+  .hero-text {
+    flex-grow: 1.6;
+  }
+  .primary-text {
+    max-width: 600px;
+  }
+}
 .primary-heading {
   font-size: 2.8rem;
   margin-bottom: 2.5rem;
@@ -179,7 +207,7 @@ header .container {
 }
 
 footer {
-  padding: 1rem 0;
+  padding: 3rem 0;
   font-size: 1.2rem;
   text-align: center;
 }
