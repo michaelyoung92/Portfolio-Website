@@ -127,6 +127,12 @@ p {
   }
 }
 
+// Text animation
+.char {
+  transform: translateY(115px);
+  transition: transform 0.5s;
+}
+
 // Header
 header {
   .container {
@@ -170,6 +176,15 @@ header {
 
 .hero-img {
   max-width: 300px;
+}
+
+.primary-heading {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  line-height: 3.5rem;
+
+  @media (min-width: 50em) {
+    line-height: 6rem;
+  }
 }
 
 .even-columns {
