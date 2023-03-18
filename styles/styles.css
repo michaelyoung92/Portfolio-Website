@@ -109,6 +109,19 @@ p {
   color: rgba(0, 0, 0, 0.7);
 }
 
+@media (hover: hover) and (pointer: fine) {
+  .email-cta:hover {
+    letter-spacing: 0.1rem;
+    color: #f7ae03;
+  }
+  footer a:hover {
+    transform: translateY(-5px);
+  }
+  .button:hover {
+    background-color: #f0f0e8;
+    color: #f1be46;
+  }
+}
 header .container {
   display: flex;
   justify-content: space-between;
@@ -125,6 +138,7 @@ header .container {
 .email-cta {
   display: none;
   color: #f1be46;
+  transition: all 0.5s ease;
 }
 
 @media (min-width: 50em) {
@@ -180,7 +194,15 @@ header .container {
 .primary-heading {
   font-size: 2.8rem;
   margin-bottom: 2.5rem;
+  color: rgb(68, 68, 68);
+}
+.primary-heading span {
   color: #f1be46;
+}
+@media (min-width: 50em) {
+  .primary-heading {
+    font-size: 6rem;
+  }
 }
 
 .primary-text {
@@ -188,6 +210,7 @@ header .container {
   margin-bottom: 1rem;
 }
 .primary-text span {
+  font-weight: bold;
   color: #f1be46;
 }
 
@@ -197,13 +220,14 @@ header .container {
 
 .button {
   background-color: #f1be46;
-  border: none;
+  border: 1px solid #f1be46;
   padding: 1rem 1.8rem;
   border-radius: 10px;
   font-weight: bold;
   color: #fff;
   margin-top: 2.5rem;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 footer {
@@ -213,6 +237,9 @@ footer {
 }
 footer p {
   opacity: 0.3;
+}
+footer a {
+  transition: all 0.5s ease;
 }
 
 .social-links {

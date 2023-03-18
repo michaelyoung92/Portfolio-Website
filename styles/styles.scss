@@ -110,6 +110,23 @@ p {
   color: rgb(0, 0, 0, 0.7);
 }
 
+// Hover animations
+@media (hover: hover) and (pointer: fine) {
+  .email-cta:hover {
+    letter-spacing: 0.1rem;
+    color: #f7ae03;
+  }
+
+  footer a:hover {
+    transform: translateY(-5px);
+  }
+
+  .button:hover {
+    background-color: #f0f0e8;
+    color: #f1be46;
+  }
+}
+
 // Header
 header {
   .container {
@@ -130,6 +147,7 @@ header {
 .email-cta {
   display: none;
   color: #f1be46;
+  transition: all 0.5s ease;
 }
 
 // Show email cta on larger devices and hide email cta icon
@@ -160,7 +178,7 @@ header {
   gap: 5rem;
 }
 
-// Position even column divs side by side
+// Position even column divs side by side on larger screens
 @media (min-width: 50em) {
   .even-columns {
     flex-direction: row;
@@ -198,7 +216,15 @@ header {
 .primary-heading {
   font-size: 2.8rem;
   margin-bottom: 2.5rem;
-  color: #f1be46;
+  color: rgb(68, 68, 68);
+
+  span {
+    color: #f1be46;
+  }
+
+  @media (min-width: 50em) {
+    font-size: 6rem;
+  }
 }
 
 .primary-text {
@@ -206,6 +232,7 @@ header {
   margin-bottom: 1rem;
 
   span {
+    font-weight: bold;
     color: #f1be46;
   }
 }
@@ -216,13 +243,14 @@ header {
 
 .button {
   background-color: #f1be46;
-  border: none;
+  border: 1px solid #f1be46;
   padding: 1rem 1.8rem;
   border-radius: 10px;
   font-weight: bold;
   color: #fff;
   margin-top: 2.5rem;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 
 // Footer
@@ -233,6 +261,10 @@ footer {
 
   p {
     opacity: 0.3;
+  }
+
+  a {
+    transition: all 0.5s ease;
   }
 }
 
