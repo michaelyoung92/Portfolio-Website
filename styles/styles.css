@@ -123,7 +123,7 @@ p {
   }
 }
 .char {
-  transform: translateY(115px);
+  transform: translateY(-200px);
   transition: transform 0.5s;
 }
 
@@ -174,6 +174,11 @@ header .container {
   }
 }
 
+.primary-text {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
 .even-columns {
   display: flex;
   flex-direction: column;
@@ -208,9 +213,10 @@ header .container {
   }
 }
 .primary-heading {
-  font-size: 2.8rem;
+  font-size: 5rem;
   margin-bottom: 2.5rem;
   color: rgb(68, 68, 68);
+  line-height: 5rem;
 }
 .primary-heading span {
   color: #f1be46;
@@ -218,6 +224,7 @@ header .container {
 @media (min-width: 50em) {
   .primary-heading {
     font-size: 6rem;
+    line-height: 6rem;
   }
 }
 
@@ -243,7 +250,7 @@ header .container {
   color: #fff;
   margin-top: 2.5rem;
   cursor: pointer;
-  transition: all 0.5s ease;
+  transition: border 0.5s ease;
 }
 
 footer {
